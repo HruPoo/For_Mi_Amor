@@ -190,3 +190,60 @@ h2{
     font-size: 5rem;
     font-weight: 100;
 }
+
+
+
+/* ... (your existing styles remain untouched above this) ... */
+
+@media (max-width: 768px) {
+  .about {
+    margin: 1rem;
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .theater,
+  .slappy {
+    float: none;
+    display: block;
+    margin: 1rem auto;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .timebox {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .days,
+  .msgs {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-container img {
+    width: 90%;
+    height: auto;
+  }
+
+  .carousel-item img,
+  .carousel-media {
+    max-height: 300px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .time h2 {
+    font-size: 3rem;
+  }
+}
