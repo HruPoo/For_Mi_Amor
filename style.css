@@ -190,3 +190,32 @@ h2{
     font-size: 5rem;
     font-weight: 100;
 }
+
+.timebox {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.time {
+  background-color: rgba(0, 0, 0, 0.6); /* translucent black */
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 80px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.time h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.time p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ccc;
+}
