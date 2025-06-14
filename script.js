@@ -66,9 +66,15 @@ const noBtn = document.getElementById("noBtn");
 const responseText = document.getElementById("responseText");
 
 let noClickCount = 0;
+let yesClickCount = 0;
 
 yesBtn.addEventListener("click", () => {
-  responseText.textContent = "yayyy 💖";
+  
+  yesClickCount++;
+  if (yesClickCount <= 1) 
+    responseText.innerHTML = `<span style="color: orange;">Awww 🥺 <br> But I coded a little for no too, so click on that too lol</span>`;
+  else 
+    responseText.innerHTML = "Hehe, 'forever' 💖";
 });
 
 noBtn.addEventListener("click", () => {
@@ -76,9 +82,9 @@ noBtn.addEventListener("click", () => {
   if (noClickCount <= 3) {
   responseText.innerHTML = `<span style="color: orange;">Excuse me?😤 <br> Try again</span>`;
 } else if (noClickCount == 9) {
-  responseText.innerHTML = `<span style="color: green;">Now no other option for you🥰🥰</span>`;
+  responseText.innerHTML = `<span style="color: green;">Well, try just one last time</span>`;
 } else {
-  responseText.innerHTML = `<span style="color: red;">Really? No so many times??? 🥹<br>TRY AGAIN!!!</span>`;
+  responseText.innerHTML = `<span style="color: red;">Really? 'No' so many times??? 🥹<br>TRY AGAIN PROPERLY!!!</span>`;
 }
 
 
