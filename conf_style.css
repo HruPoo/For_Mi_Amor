@@ -1,0 +1,49 @@
+/* confession page */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.bg {
+  background: linear-gradient(135deg, #648DB3, #ee9ca7);
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+}
+
+.heading {
+  font-weight: 600;
+  color: #333;
+}
+
+.question {
+  font-weight: 400;
+  color: #555;
+}
+
+#yesBtn, #noBtn {
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+#yesBtn:hover {
+  background-color: #28a745;
+  transform: scale(1.05);
+}
+
+#noBtn:hover {
+  background-color: #dc3545;
+  transform: scale(0.95);
+}
+
+#responseText {
+  color: #6c757d;
+  font-style: italic;
+}
+

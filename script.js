@@ -55,3 +55,42 @@ function timer2() {
 // Run both timers every second
 setInterval(timer1, 1000);
 setInterval(timer2, 1000);
+
+
+
+
+// confession page
+
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+const responseText = document.getElementById("responseText");
+
+let noClickCount = 0;
+
+yesBtn.addEventListener("click", () => {
+  responseText.textContent = "yayyy 💖";
+});
+
+noBtn.addEventListener("click", () => {
+  noClickCount++;
+  if (noClickCount <= 3) {
+  responseText.innerHTML = `<span style="color: orange;">Excuse me?😤 <br> Try again</span>`;
+} else if (noClickCount == 9) {
+  responseText.innerHTML = `<span style="color: green;">Now no other option for you🥰🥰</span>`;
+} else {
+  responseText.innerHTML = `<span style="color: red;">Really? No so many times??? 🥹<br>TRY AGAIN!!!</span>`;
+}
+
+
+  let shrinkFactor = 1 - noClickCount * 0.1;
+  let growFactor = 1 + noClickCount * 0.1;
+
+  if (shrinkFactor <= 0.1) {
+    noBtn.style.display = "none";
+  } else {
+    noBtn.style.transform = `scale(${shrinkFactor})`;
+  }
+
+  yesBtn.style.transform = `scale(${growFactor})`;
+});
+
