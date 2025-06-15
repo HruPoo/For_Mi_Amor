@@ -71,10 +71,12 @@ let yesClickCount = 0;
 yesBtn.addEventListener("click", () => {
   
   yesClickCount++;
-  if (yesClickCount <= 1) 
+
+  if (noClickCount >= 1) {
+    responseText.innerHTML = "there we gooo. 'forever' :)💖";
+  } else {
     responseText.innerHTML = `<span style="color: orange;">Awww 🥺 <br> But I coded a little for no too, so click on that too lol</span>`;
-  else 
-    responseText.innerHTML = "Hehe, 'forever' 💖";
+  }
 });
 
 noBtn.addEventListener("click", () => {
