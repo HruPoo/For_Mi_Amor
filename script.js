@@ -14,7 +14,7 @@ const Seconds2 = document.getElementById('seconds2');
 
 // Start dates
 const startDate = new Date("June 10, 2025 21:55:00").getTime();
-const startDate2 = new Date("Sept 4, 2018 21:55:00").getTime();
+const startDate2 = new Date("Sept 7, 2018 21:55:00").getTime();
 
 // Timer for Confession
 function timer1() {
